@@ -1,5 +1,25 @@
 https://bigfrontend.dev/problem
 
+155. create a count function
+JavaScript
+Share
+
+easy  3299 accepted / 9052 tried
+
+Well done!You have solved it!
+
+Please create a function count(), when called it should return how many times it has been called, count.reset() should also implemented.
+
+count() // 1
+count() // 2
+count() // 3
+
+count.reset()
+
+count() // 1
+count() // 2
+count() // 3
+
 163. integer to roman numerals
 JavaScript
 Algorithm
