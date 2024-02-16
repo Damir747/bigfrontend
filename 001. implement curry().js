@@ -1,3 +1,7 @@
+/**
+ * @param { (...args: any[]) => any } fn
+ * @returns { (...args: any[]) => any }
+*/
 const curry = (fn) => (...args) => {
 	if (args.length >= fn.length) {
 		return fn.call(this, ...args);
