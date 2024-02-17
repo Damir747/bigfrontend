@@ -3,17 +3,36 @@
 * @param {any} value
 */
 class NodeStore {
-
+	constructor() {
+		this.state = [];
+	}
 	set(node, value) {
-		this[node] = value;
+		for (let i = 0; i < this.state.length; i++) {
+			if (this.state[i][0] === node) {
+				this.state[i] = [node, value];
+				return this.state[i];
+			}
+		}
+		this.state.push([node, value]);
+		return this.state[this.state.length - 1];
 	}
 
 	get(node) {
-		return this[node];
+		for (let i = 0; i < this.state.length; i++) {
+			if (this.state[i][0] === node) {
+				return this.state[i];
+			}
+		}
+		return undefined;
 	}
 
 	has(node) {
-		return this.hasOwnProperty(node);
+		for (let i = 0; i < this.state.length; i++) {
+			if (this.state[i][0] === node) {
+				return true;
+			}
+		}
+		return false;
 	}
 }
 
