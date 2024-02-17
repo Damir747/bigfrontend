@@ -95,6 +95,57 @@ follow up
 
 Are you able to solve it both recursively and iteratively?
 
+11. what is Composition? create a pipe()
+JavaScript
+Share
+
+easy  6196 accepted / 13371 tried
+
+Well done!You have solved it!
+
+what is Composition? It is actually not that difficult to understand, see @dan_abramov 's explanation.
+
+Here you are asked to create a pipe() function, which chains multiple functions together to create a new function.
+
+Suppose we have some simple functions like this
+
+const times = (y) =>  (x) => x * y
+const plus = (y) => (x) => x + y
+const subtract = (y) =>  (x) => x - y
+const divide = (y) => (x) => x / y
+
+Your pipe() would be used to generate new functions
+
+
+pipe([
+  times(2),
+  times(3)
+])  
+// x * 2 * 3
+
+pipe([
+  times(2),
+  plus(3),
+  times(4)
+]) 
+// (x * 2 + 3) * 4
+
+pipe([
+  times(2),
+  subtract(3),
+  divide(4)
+]) 
+// (x * 2 - 3) / 4
+
+notes
+
+    to make things simple, functions passed to pipe() will all accept 1 argument
+pipe([])(1)  
+pipe([times(2)])(1)  
+pipe([times(2), times(3)])(2)  
+pipe([times(2), times(3), plus(4)])(2)  
+pipe([times(2), subtract(3), divide(4)])(2)  
+
 147. Pick up stones
 JavaScript
 Share
