@@ -146,6 +146,22 @@ pipe([times(2), times(3)])(2)
 pipe([times(2), times(3), plus(4)])(2)  
 pipe([times(2), subtract(3), divide(4)])(2)  
 
+145. most frequently occurring character
+JavaScript
+Share
+
+Given a non-empty string, return the most frequently ocurring character.
+
+If there are multiple characters with same occurrance, return an array of them.
+
+count('abbccc')
+// 'c'
+
+count('abbcccddd')
+// ['c', 'd']
+
+Follow-up: What is the time & space complexity of your approach?
+
 147. Pick up stones
 JavaScript
 Share
