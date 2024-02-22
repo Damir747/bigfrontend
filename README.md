@@ -146,6 +146,28 @@ pipe([times(2), times(3)])(2)
 pipe([times(2), times(3), plus(4)])(2)  
 pipe([times(2), subtract(3), divide(4)])(2)  
 
+39. implement range()
+JavaScript
+Share
+
+easy  2261 accepted / 4576 tried
+
+Well done!You have solved it!
+
+Can you create a range(from, to) which makes following work?
+
+for (let num of range(1, 4)) {
+  console.log(num)  
+}
+// 1
+// 2
+// 3
+// 4
+
+This is a simple one, could you think more fancy approaches other than for-loop?
+
+Notice that you are not required to return an array, but something iterable would be fine.
+
 100. detect circle in linked list
 JavaScript
 Algorithm
