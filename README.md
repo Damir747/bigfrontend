@@ -146,6 +146,35 @@ pipe([times(2), times(3)])(2)
 pipe([times(2), times(3), plus(4)])(2)  
 pipe([times(2), subtract(3), divide(4)])(2)  
 
+100. detect circle in linked list
+JavaScript
+Algorithm
+Share
+
+easy  896 accepted / 2456 tried
+
+A Singly Linked List is a bunch of nodes linked in one direction.
+
+class Node {
+  val: any
+  next: Node
+  constructor(val: any, next:Node) {
+    this.val = val
+    this.next = next
+  }
+}
+
+const node2 = new Node(2)
+const node1 = new Node(1, node2) // connect 1 -> 2
+
+A Node might link to a node before it, thus creating a circle.
+
+Can you write a function to detect it?
+
+Follow-up
+
+What is the space cost for your approach? Can you solve it without extra space?
+
 133. roman numerals to integer
 JavaScript
 Meta
