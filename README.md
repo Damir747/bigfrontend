@@ -146,6 +146,22 @@ pipe([times(2), times(3)])(2)
 pipe([times(2), times(3), plus(4)])(2)  
 pipe([times(2), subtract(3), divide(4)])(2)  
 
+37. implement Binary Search (unique)
+JavaScript
+Share
+
+easy  1839 accepted / 4844 tried
+
+Even in Front-End review, basic algorithm technique like Binary Search are likely to be asked.
+
+You are given an unique & ascending array of integers, please search for its index with Binary Search.
+
+If not found, return -1
+
+note
+
+Please don't use Array.prototype.indexOf(), it is not our goal.
+
 39. implement range()
 JavaScript
 Share
