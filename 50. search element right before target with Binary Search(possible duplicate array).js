@@ -22,6 +22,9 @@ function firstIndex(arr, target) {
  */
 function elementBefore(arr, target) {
 	const index = firstIndex(arr, target);
+	if (index === -1) {
+		return undefined;
+	}
 	if (index === 0) {
 		return undefined;
 	}
