@@ -218,6 +218,23 @@ note
 
 Please don't use Array.prototype.lastIndexOf(), it is not our goal.
 
+50. search element right before target with Binary Search(possible duplicate array)
+JavaScript
+Algorithm
+Share
+
+easy  764 accepted / 2067 tried
+
+This is a variation of 37. implement Binary Search (unique).
+
+Your are given a sorted ascending array of number, but might have duplicates, you are asked to return the element right before first appearance of a target number.
+
+If not found return undefined.
+
+note
+
+Please don't use Array.prototype.indexOf(), it is not our goal.
+
 100. detect circle in linked list
 JavaScript
 Algorithm
